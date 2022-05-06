@@ -5,19 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delta Music Services in India| Delta Music.com</title>
+    <title>Xxxtentacion Music Services in India| XxxtentacionMusic.com</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="project/css/phone.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav id="navbar"> 
+    <nav id="navbar">
         <div id="logo">
-            <img src="logo.png" alt=" XxxtentacionMusic.com">
+            <img src="project/css/images/logo.png" alt=" XxxtentacionMusic.com">
         </div>
-       
-       
 
         <ul>
             <li class="item"><a href="#home">Home</a></li>
@@ -33,33 +31,32 @@
         <h1 class="h-primary">Welcome to MyMusic</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor labor.</p>
         <p>Nulla voluptatibus earum impedit, eum, delectus laboriosam </p>
-        <button class="btn">Play Now</button>
-        <audio controls>
-            <source src="xxx.mp3" type="audio/mpeg"/>
-
-
+        <audio id="myAudio">
+            <source src="xxx.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
         </audio>
-    
+        <button onclick="playAudio()" type="button" class="btn">Play Audio</button>
+        <button onclick="pauseAudio()" type="button" class="btn">Pause Audio</button>   
     </section>
     <section id="services-container">
         <h1 class="h-primary center">Our Services</h1>
         <div id="services">
             <div class="box">
-                <img src="1.png" alt="">
+                <img src="project/css/images/1.png" alt="">
                 <h2 class="h-secondary center">English Song</h2>
                 <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi totam iure magni tempora ex molestiae. Rem optio velit veritatis consequuntur esse repellat debitis! Tenetur assumenda sapiente
                     </p>
             </div>
             <div class="box">
-                <img src="3.png" alt="">
+                <img src="project/css/images/3.png" alt="">
                 <h2 class="h-secondary center">Hindi Song</h2>
                 <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur assumenda sapiente
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, nobis earum quia veritatis qui, enim voluptas dignissimos ratione deserunt repellat sapiente illo sit.
                    </p>
             </div>
             <div class="box">
-                <img src="2.png" alt="">
+                <img src="project/css/images/2.png" alt="">
                 <h2 class="h-secondary center">Remix Song</h2>
                 <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur assumenda sapiente
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis amet error explicabo, reiciendis dignissimos eligendi nulla. Quia laudantium nesciunt libero explicabo, rem nisi?
@@ -73,16 +70,16 @@
         <h1 class="h-primary center">Our Clients</h1>
         <div id="clients">
             <div class="client-item">
-                <img src="logo5.png" alt='Our Clients'>
+                <img src="project/css/images/logo5.png" alt='Our Clients'>
             </div>
             <div class="client-item">
-                <img src="logo2.png" alt='Our Clients'>
+                <img src="project/css/images/logo2.png" alt='Our Clients'>
             </div>
             <div class="client-item">
-                <img src="logo6.png" alt='Our Clients'>
+                <img src="project/css/images/logo6.png" alt='Our Clients'>
             </div>
             <div class="client-item">
-                <img src="logo7.png" alt='Our Clients'>
+                <img src="project/css/images/logo7.png" alt='Our Clients'>
             </div>
 
 
@@ -118,7 +115,18 @@
             Copyright &copy; www.MyMusic.com. All rights reserved!
         </div>
 
-        </footer>
-</body>
+    </footer>
 
+    <script type="text/javascript">
+        var x = document.getElementById("myAudio"); 
+
+        function playAudio() { 
+        x.play(); 
+        } 
+
+        function pauseAudio() { 
+        x.pause(); 
+        } 
+    </script>
+</body>
 </html>
